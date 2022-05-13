@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School - Student Management</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<!-- tablefontstyle -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .content{
+            font-family: 'Oswald', sans-serif;
+            min-height: 85vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+    <nav> 
+        <img style="margin-left: 10px; margin-top: 3px;" src="https://www.kindpng.com/picc/m/157-1575393_students-student-icon-male-female-hd-png-download.png" 
+        alt="StudentManagementlogo" width="40" height="40">
+        <strong>Spring Flowers School</strong>
+        <a href="./welcome.html">Home</a>
+        <a href="./studentdetails.html" >Student Profile</a>
+        <a href="./Timetable.html" class="active">TimeTable</a>
+    </nav>  
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>S.NO</th>
+                    <th>Subject</th>
+                    <th>Faculty</th>
+                    <th>Timing</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>React</td>
+                    <td>Charan</td>
+                    <td>9:00 AM-10:30 AM</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Angular</td>
+                    <td>Surya</td>
+                    <td>10:30 AM-12:00 PM</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Lunch Break</td>
+                    <td>12:00 PM-1:00 PM</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Python</td>
+                    <td>Nikhil</td>
+                    <td>1:00 PM-2:30 PM</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>SQL</td>
+                    <td>Vamsi</td>
+                    <td>2:30 PM-4:00 PM</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        loginGaurd();
+    </script>
+</body>
+</html>

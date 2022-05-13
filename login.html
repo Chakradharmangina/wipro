@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Spring Flowers School</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav> 
+        <img style="margin-left: 10px; margin-top: 3px;" src="https://www.kindpng.com/picc/m/157-1575393_students-student-icon-male-female-hd-png-download.png" 
+        alt="StudentManagementlogo" width="40" height="40">
+        <strong>Spring Flowers School</strong>
+        <a href="./welcome.html">Home</a>
+        <a href="./studentdetails.html">Student Profile</a>
+        <a href="./Timetable.html">TimeTable</a>
+        <a href="./login.html" class="active right" >Login</a>
+
+    </nav>
+    <div class="loginform">
+        <h1>Login</h1>
+        <form id="form">
+            <input type="text" placeholder="Name" name="name" id="name" required><br>
+            <input type="password" name="pass" placeholder="Password"><br>
+            <input type="submit" value="Login" class="login-btn">
+        </form>
+    </div>
+
+    <script>
+        let name = localStorage.getItem("name")
+        if(name){
+            window.location.href = "welcome.html";
+        }
+        const login = (e) => {
+            let name = document.querySelector("#name").value;
+            localStorage.setItem("name",name)
+            window.location.href = "welcome.html"
+        }
+
+        document.querySelector('#form').addEventListener("submit", event => {
+            event.preventDefault();
+            login(event);
+        })
+    </script>
+    
+</body>
+</html>

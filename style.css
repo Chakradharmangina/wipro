@@ -1,0 +1,188 @@
+nav{
+    padding: 15px ;
+    background-color:#21618C;
+    color: white;
+}
+
+nav img{
+    vertical-align: middle;
+}
+
+a{   
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a.active, a:hover{
+    text-decoration: underline;
+}
+
+
+body{
+    background-color: #AED6F1;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.studentinformation{
+    background-color: whitesmoke;
+    margin-top:5px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+
+.studentdetails h3{
+    position: relative;
+}
+
+.studentdetails h3::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 5px;
+    bottom: -5px;
+    background-color: #fff;
+}
+
+
+.studentdetails{
+    width: 50%;
+    padding: 20px;
+    background-color: #21618C;
+    color: azure;
+    margin-left: 15px;
+}
+
+.studentdetails, img{
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+}
+
+
+p{
+    color: aqua;
+}
+
+
+.welcome-page{
+    margin: 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.welcome-page img{
+    width: 65%;
+}
+
+.welcome-page .text{
+    position: absolute;
+    background-color: rgba(255, 255, 255, .8);
+    padding: 20px;
+    font-size: 2rem;
+    margin-right: 30%;
+}
+td, th, table{
+    padding: 25px;
+    background-color: rgb(154, 194, 202);
+    border:  1px solid black;
+    border-collapse: collapse;
+}
+
+table{
+    width: 60%;
+    text-align: center;
+}
+.loginform{
+    width: 30%;
+    margin:auto;
+    background: #fff;
+    margin-top: 10%;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.loginform input[type=text], input[type=password]{
+    border: 2px solid #677680de;
+    border-radius: 8px;
+    margin:5px 8px;
+    padding: 10px;
+    outline: none;
+    width: 60%;
+    font-family: inherit;
+}
+.loginform label{
+    margin-left: 10px;
+}
+
+.login-btn{
+    border: none;
+    border-radius: 8px;
+    background-color: #21618C;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: inherit;
+}
+
+nav .right{
+    float:  right;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+.welcome-page .Activites{
+    height: 300px;
+    font-family: inherit;
+    padding: 20px;
+    float:right;
+    background-color:rgb(228, 246, 253);
+    margin-left:10px;
+    margin-bottom: 11%;
+}
+.welcome-page h2,h5{
+    margin: 10px 10px;
+}
+
+.extraactivites{
+    width:40%;
+    margin:auto;
+    background: #fff;
+    margin-top: 5%;
+    padding: 16px;
+    border-radius: 8px;
+}
+.extraactivites label input[type=text]{
+    font-family: inherit;
+    margin-left: 20px;
+}
+.extraactivites label{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.extraactivites input{
+    margin-left: 20px;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 50px;
+    border:2px solid #a3c44a;
+    border-radius: 10px;
+}
+.extraactivites button{
+    margin-left: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #21618C;
+    color: white;
+    padding: 8px 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-family: inherit;
+}
