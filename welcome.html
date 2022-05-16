@@ -27,11 +27,14 @@
         </div>
         <div class="Activites">
             <h2>Your Activites:</h2>
-            <h5>please click on activite to add comment</h5>
-            <a href="j1.html" style="color:green">React</a><br>
-            <a href="j1.html" style="color:green">Angular</a><br>
-            <a href="j1.html"style="color:green">Python</a><br>
-            <a href="j1.html" style="color:green">SQL</a><br><br>
+            <h5>Please click on activite to add comment</h5>
+            <div id="activities">
+                <!-- <a href="#" onclick="addComment('React')" style="color:green">React</a><br>
+            <a href="#" onclick="addComment('Angular')" style="color:green">Angular</a><br>
+            <a href="#" onclick="addComment('Python')" style="color:green">Python</a><br>
+            <a href="#" onclick="addComment('SQL')" style="color:green">SQL</a><br><br> -->
+            </div>
+            <br>
             <a href="./ExtraActivites.html" style="color:white; background-color: rgb(28, 48, 49); padding: 5px; border-radius: 10px;">Add ExtraActivites<a>
         </div>
     </div>
@@ -41,6 +44,7 @@
     <script src="script.js"></script>
     <script>
         loginGaurd();
+        renderActivities()
     </script>
 </body>
 </html>
